@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     private const string TAG_BONUS_SHIELD = "Bonus Shield", TAG_MISSILE = "Missile", TAG_OUT_SCREEN = "Out Of Scope", TAG_LIMIT = "Limit", TAG_END = "End";
     private const string TAG_BOOST = "Boost", TAG_BOOST_TEMP = "Boost Temp", TAG_LOST_BOOST_TEMP = "Lost Boost Temp";
 
-# if UNITY_EDITOR
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -370,7 +370,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Arrêt et relance de la coroutine du boost temporaire
+    // ArrÃªt et relance de la coroutine du boost temporaire
     public void CoroutineBoostTemp()
     {
         if (!isDead && !isEnd)
